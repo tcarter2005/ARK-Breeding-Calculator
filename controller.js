@@ -91,10 +91,10 @@ var breedingController=angular.module('breedingControllers', []).controller('bre
 	}
 
 	$scope.foodlists={
-		Carnivore: ['Raw Fish Meat', 'Raw Meat', 'Cooked Meat', 'Kibble'],
+		Carnivore: ['Raw Meat', 'Raw Fish Meat', 'Cooked Meat', 'Cooked Fish Meat', 'Kibble'],
 		Herbivore: ['Mejoberry', 'Berry', 'Kibble'],
-		Omnivore: ['Raw Fish Meat', 'Raw Meat', 'Cooked Meat', 'Mejoberry', 'Berry', 'Kibble'],
-		Microraptor: ['Raw Meat', 'Cooked Meat', 'Rare Flower'],
+		Omnivore: ['Raw Meat', 'Raw Fish Meat', 'Cooked Meat', 'Cooked Fish Meat', 'Mejoberry', 'Berry', 'Kibble'],
+		Microraptor: ['Raw Meat', 'Raw Fish Meat', 'Cooked Meat', 'Cooked Fish Meat', 'Rare Flower'],
 		Archaeopteryx: ['Chitin'],
 		Carrion: ['Spoiled Meat'],
 		Piscivore: ['Raw Fish Meat', 'Cooked Fish Meat']
@@ -113,7 +113,7 @@ var breedingController=angular.module('breedingControllers', []).controller('bre
 	/*
 	* Where to locate stat values:
 	*
-	* Note: PrimalItemConsumable_Egg_[Creature]_Fertilized can be PrimalItemConsumable_UnderwaterEgg_[Creature] fo runderwater creatures
+	* Note: PrimalItemConsumable_Egg_[Creature]_Fertilized can be PrimalItemConsumable_UnderwaterEgg_[Creature] for underwater creatures
 	*
 	* basefoodrate: DinoCharacterStatusComponent_BP_[Creature]/BaseFoodConsumionRate
 	* babyfoodrate: DinoCharacterStatusComponent_BP_[Creature]/BabyDinoConsumingFoodRateMultiplier
